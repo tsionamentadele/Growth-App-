@@ -80,6 +80,19 @@ color: var(--primary-color);
     margin-bottom: 20px;
 }
 
+/* testimonials */
+.testimonials{
+    padding: 50px 0px;
+}
+.testimonials-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.testimonials .card p:nth-child(2){
+    margin-top: 30px;
+    font-weight: bold;
+}
 /* Utility */
 .container{
     max-width: 1100px;
@@ -183,4 +196,11 @@ color: var(--primary-color);
 .bg-black{
     background-color: #000;
     color: #fff;
+}
+/* cards */
+.card{
+    background: #fff;
+    color: var(--dark-color);
+    border-radius: 10px;
+    padding: 20px;
 }
