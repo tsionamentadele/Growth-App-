@@ -12,6 +12,7 @@
 body{
     font-family: 'poppins',sans-serif;
     line-height: 1.5;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -337,7 +338,7 @@ margin-bottom: 30px;
 .mobile-menu{
     position: fixed;
     top: 0;
-    right: -300px;
+    right: -3000px;
     width: 350px;
     height: 100vh;
     z-index: 100;
@@ -359,10 +360,17 @@ margin-bottom: 30px;
     font-size: 20px;
     transition: .3s;
 }
-@media (max-width:960px){}
+@media (max-width:960px){
+    .text-xxl{
+        font-size: 2.5rem;;
+    }
+}
 
 
 @media (max-width:670px){
+    .container,.container-sm{
+        padding: 0 20px;
+    }
     .navbar .main-menu{
         display: none;
     }
@@ -370,7 +378,59 @@ margin-bottom: 30px;
         display: block;
         cursor: pointer;
     }
+    .hero .container{
+        background: url('../images/hero-bg-mobile.png') no-repeat;
+        background-size: 350px 400px;
+        background-position: bottom;
+        height: 770px;
+    }
+    .hero .hero-content{
+        margin: auto;
+        width: 90%;
+        text-align: center;
+    }
+    .hero .hero-text{
+        width: 100%;
+    }
+    .hero .hero-buttons .btn{
+        margin-bottom: 10px;
+        display: block;
+        width: 100%;
+    }
+
+    .text-xl{
+        font-size: 1.9rem;
+    }
+    .text-lg{
+        font-size: 1.5rem;
+    }
+    .text-md{
+        font-size: 1.1rem;
+    }
+
+    .testimonials .testimonials-heading{
+        width: 100%;
+    }
+    .testimonials .testimonials-grid{
+        grid-template-columns: 1fr;
+    }
+    .pricing .pricing-grid{
+        flex-direction: column;
+        margin: 0 20px;
+    }
+   
+    .footer .footer-grid{
+        grid-template-columns: 1fr;
+    }
+    .footer>div{
+        text-align: center;
+    }
+    
 }
 
 
-@media (max-width:500px){}
+@media (max-width:500px){
+    .text-xxl{
+        font-size: 2rem;
+    }
+}
